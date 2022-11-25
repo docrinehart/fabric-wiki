@@ -2,16 +2,13 @@
 sidebar_position: 1
 ---
 
-# Index
+# Fabric Documentation
 
-This is a test page.
+This section of the wiki is more tailored to contributors and people interested in the Fabric toolchain's technical shennanigens.
 
-You can use the following method provided by `FabricItemGroupBuilder` to create a custom itemgroup!
+If you're looking to learn to create mods with Fabric, [you should checkout the tutorials section of the wiki found here.](/tutorials/)
 
-```java reference
-https://github.com/FabricMC/fabric/blob/fd0839fe43b6f1d41cc49291e53a260e9ccecbe6/fabric-item-group-api-v1/src/main/java/net/fabricmc/fabric/api/itemgroup/v1/FabricItemGroup.java#L51
-```
+## Fabric Wiki
 
-![](../static/img/logo.png)
+If you're looking for information on contributing to the Fabric Wiki, you should take a look at the [contribution guidelines found here.](/docs/contributing)
 
-## Next!! This is experimental!

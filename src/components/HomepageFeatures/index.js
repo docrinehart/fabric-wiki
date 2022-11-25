@@ -9,13 +9,13 @@ const links = [
     title: "Learn to create Fabric mods.",
     description: "Get a headstart modding with Fabric by checking out the developer tutorials. These tutorials will guide you through the creation of a mod all the way to complex topics such as mixins and more.",
     buttonTitle: "Get Started",
-    buttonLink: "/docs/"
+    buttonLink: "/tutorial/"
   },
   {
     title: "Player Help",
     description: "If you wish to use Fabric as a player, server administrator or modpack developer, you should checkout the player guides - these pages will help you install fabric, troubleshoot issues and more.",
     buttonTitle: "Player Guides",
-    buttonLink: "/docs/"
+    buttonLink: "/player/"
   },
   {
     title: "Documentation",
@@ -27,16 +27,16 @@ const links = [
 
 function Feature({ title, description, buttonTitle, buttonLink }) {
   return (
-      <div class="col card shadow--md margin-horiz--md">
-        <div class="card__header">
+      <div className="col card shadow--md margin-horiz--md">
+        <div className="card__header">
           <h3>{title}</h3>
         </div>
-        <div class="card__body">
+        <div className="card__body">
           <p>
             {description}
           </p>
         </div>
-        <div class="card__footer">
+        <div className="card__footer">
           <Link to={buttonLink} className="button button--secondary button--block">{ buttonTitle }</Link>
         </div>
       </div>

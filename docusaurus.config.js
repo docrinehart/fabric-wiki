@@ -3,6 +3,7 @@
 
 const lightCodeTheme = require('prism-react-renderer/themes/github');
 const darkCodeTheme = require('prism-react-renderer/themes/dracula');
+const sidebars = require.resolve('./sidebars.js');
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
@@ -32,7 +33,8 @@ const config = {
       /** @type {import('@docusaurus/preset-classic').Options} */
       ({
         docs: {
-          sidebarPath: require.resolve('./sidebars.js'),
+          path: 'docs',
+          sidebarPath: sidebars.docsSidebar,
           editUrl:
             'https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/',
         },
@@ -40,7 +42,19 @@ const config = {
           customCss: require.resolve('./src/css/custom.css'),
         },
       }),
-    ],
+    ], 
+  ],
+
+  plugins: [
+    [
+      '@docusaurus/plugin-content-docs',
+      {
+        id: 'tutorial',
+        path: 'tutorial',
+        routeBasePath: 'tutorial',
+        sidebarPath: sidebars.tutorialSidebar,
+      },
+    ]
   ],
 
   themes: [
