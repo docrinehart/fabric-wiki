@@ -34,6 +34,7 @@ const config = {
       ({
         docs: {
           path: 'docs',
+          // @ts-ignore
           sidebarPath: sidebars.docsSidebar,
           editUrl:
             'https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/',
@@ -52,7 +53,18 @@ const config = {
         id: 'tutorial',
         path: 'tutorial',
         routeBasePath: 'tutorial',
+        // @ts-ignore
         sidebarPath: sidebars.tutorialSidebar,
+      },
+    ],
+    [
+      '@docusaurus/plugin-content-docs',
+      {
+        id: 'player',
+        path: 'player',
+        routeBasePath: 'player',
+        // @ts-ignore
+        sidebarPath: sidebars.playerSidebar,
       },
     ]
   ],
@@ -71,6 +83,9 @@ const config = {
           src: 'img/logo.png',
         },
         items: [
+          {to: 'tutorial', label: 'Tutorials', position: 'left'},
+          {to: 'player', label: 'Player Guides', position: 'left'},
+          {to: 'docs', label: 'Documentation', position: 'left'},
           {
             href: 'https://github.com/facebook/docusaurus',
             label: 'GitHub',
