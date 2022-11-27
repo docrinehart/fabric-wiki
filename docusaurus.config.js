@@ -8,7 +8,7 @@ const sidebars = require.resolve('./sidebars.js');
 /** @type {import('@docusaurus/types').Config} */
 const config = {
   title: 'Fabric Wiki',
-  url: 'https://your-docusaurus-test-site.com',
+  url: 'https://mineblock11.github.io/',
   baseUrl: '/',
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
@@ -87,14 +87,14 @@ const config = {
           {to: 'player', label: 'Player Guides', position: 'left'},
           {to: 'docs', label: 'Documentation', position: 'left'},
           {
-            href: 'https://github.com/facebook/docusaurus',
-            label: 'GitHub',
-            position: 'right',
-          },
-          {
             type: 'docsVersionDropdown',
             position: 'right',
             dropdownActiveClassDisabled: true,
+          },
+          {
+            href: 'https://github.com/mineblock11/fabric-wiki',
+            label: 'GitHub',
+            position: 'right',
           },
         ],
       },
