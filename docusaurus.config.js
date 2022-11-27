@@ -37,7 +37,7 @@ const config = {
           // @ts-ignore
           sidebarPath: sidebars.docsSidebar,
           editUrl:
-            'https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/',
+            'https://github.com/mineblock11/fabric-wiki/tree/master/',
         },
         theme: {
           customCss: require.resolve('./src/css/custom.css'),
